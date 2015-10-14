@@ -12,6 +12,7 @@
       ],
       "iso_checksum": "0501c446929f713eb162ae2088d8dc8b6426224a",
       "iso_checksum_type": "sha1",
+	  "ssh_wait_timeout": "15m",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
       "http_directory": "preseed",
