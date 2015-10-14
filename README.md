@@ -31,15 +31,16 @@ also specify Ubuntu 12.04 LTS "*Precise Pangolin*" or CentOS 7 LTS mini like so:
 ```bash
 $ rake build[ubuntu1204] install[ubuntu1204]
 or
+$ rake build[centos7mini] install[centos7mini]
 ```
 
 _**Note:** Amazon Linux is not supported as it cannot be run outside of
-Amazon EC2._
+Amazon EC2. But the CentOS 7 build is very close to a Amazon Linux._
 
 
 ## Using the Box
 
-The compiled box will be named `ubuntu1404-opsworks` or `ubuntu1204-opsworks`.
+The compiled box will be named `ubuntu1404-opsworks` or `ubuntu1204-opsworks` or `centos7mini-opsworks`.
 To utilize this box in your project, create a new Vagrantfile and include
 the following:
 
