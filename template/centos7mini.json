@@ -1,7 +1,7 @@
 {
   "builders": [
     {
-      "vm_name": "centos7mini-opsworks",
+      "vm_name": "centos7mini-30gb-opsworks",
       "type": "virtualbox-iso",
       "guest_os_type": "RedHat_64",
       "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
@@ -25,10 +25,10 @@
       ],
       "shutdown_command": "echo 'vagrant' | sudo -S -E shutdown -P now",
       "hard_drive_interface": "sata",
-	  "disk_size": 10000
+	  "disk_size": 30720
     },
     {
-      "vm_name": "centos7mini-opsworks",
+      "vm_name": "centos7mini-30gb-opsworks",
       "type": "vmware-iso",
       "guest_os_type": "RedHat_64",
       "iso_urls": [
@@ -84,7 +84,7 @@
   "post-processors": [
     {
       "type": "vagrant",
-      "output": "build/centos7mini-opsworks-{{.Provider}}.box",
+      "output": "build/centos7mini-30gb-opsworks-{{.Provider}}.box",
       "include": [
         "opsworks/opsworks",
         "opsworks/opsworks.rb",
